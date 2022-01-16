@@ -1,0 +1,45 @@
+/* Custom properties */
+:root {
+  /* colors */
+  --clr-link-primary: hsl(51 100% 49%);
+  --clr-link-secondary: hsl(7 99% 70%);
+  --clr-white: hsl(0 0 100%);
+
+  --clr-graphic-design-text: rgb(17, 18, 17);
+  --clr-photo-text: hsl(198 62% 26%);
+  --clr-footer: hsl(168 34% 41%);
+
+  --clr-neutral-deep: hsl(212 27% 19%);
+  --clr-neutral-dark: hsl(213 9% 39%);
+  --clr-neutral-medium: hsl(232 10% 55%);
+  --clr-neutral-light: hsl(210 4% 67%);
+
+  /* font-size */
+  --fs-900: 3rem;
+  --fs-700: 2rem;
+  --fs-600: 1.125rem;
+
+  /* font-families */
+  --ff-sans-serif: "Barlow", sans-serif;
+  --ff-serif: "Fraunces", serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
