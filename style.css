@@ -3,7 +3,7 @@
   /* colors */
   --clr-link-primary: hsl(51 100% 49%);
   --clr-link-secondary: hsl(7 99% 70%);
-  --clr-white: hsl(0 0 100%);
+  --clr-white: hsl(0 0% 100%);
 
   --clr-graphic-design-text: rgb(17, 18, 17);
   --clr-photo-text: hsl(198 62% 26%);
@@ -15,9 +15,9 @@
   --clr-neutral-light: hsl(210 4% 67%);
 
   /* font-size */
-  --fs-900: 3rem;
+  --fs-900: 3.5rem;
   --fs-700: 2rem;
-  --fs-600: 1.125rem;
+  --fs-400: 1.125rem;
 
   /* font-families */
   --ff-sans-serif: "Barlow", sans-serif;
@@ -39,7 +39,111 @@ p {
   margin: 0;
 }
 
+h1,
+h3,
+h4 {
+  font-family: var(--ff-serif);
+}
+
 img {
   max-width: 100%;
   display: block;
+}
+
+body {
+  font-family: var(--ff-sans-serif);
+  font-size: var(--fs-400);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Utility classes */
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 90rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+  font-weight: 900;
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+  font-weight: 700;
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+/* Components */
+
+.hero-image {
+  background-image: url(./images/mobile/image-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (min-width: 35rem) {
+  .hero-image {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    padding-top: 1.5em;
+    font-size: var(--fs-900);
+  }
+}
+
+.primary-header {
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.navigation {
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.title {
+  color: var(--clr-white);
+  text-align: center;
+}
+
+.arrow-image {
+  margin-top: 5em;
+  margin-inline: auto;
 }
