@@ -21,7 +21,7 @@
     <title>Sunnyside Agency Landing Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="flex">
     <div class="container hero-image">
       <header class="primary-header flex">
         <div>
@@ -37,7 +37,7 @@
         </nav>
       </header>
       <div>
-        <h1 class="title fs-600 letter-spacing-1 uppercase">
+        <h1 class="title fs-800 letter-spacing-1 uppercase">
           We are creatives
         </h1>
         <div>
@@ -50,29 +50,40 @@
       </div>
     </div>
 
-    <main class="container">
+    <main class="grid">
       <article>
-        <h3>Transform your brand</h3>
-        <p>
-          We are a full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you.
-        </p>
+        <div class="image-transform">
+          <img
+            src="images/mobile/image-transform.jpg"
+            alt="egg with yellow background"
+          />
+        </div>
+        <div class="card-content flex">
+          <h3>Transform your brand</h3>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
 
-        <a href="#">Learn more</a>
+          <a class="learn-more-link" href="#">Learn more</a>
+        </div>
       </article>
       <article>
-        <h3>Stand out to the right audience</h3>
+        <div><img src="images/mobile/image-stand-out.jpg" alt="" /></div>
+        <div class="card-content">
+          <h3>Stand out to the right audience</h3>
 
-        <p>
-          Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we’ll build and extend
-          your brand in digital places.
-        </p>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
 
-        <a href="#">Learn more</a>
+          <a href="#">Learn more</a>
+        </div>
       </article>
-      <article>
+      <article class="graphic-design-card">
         <h4>Graphic design</h4>
         <p>
           Great design makes you memorable. We deliver artwork that underscores

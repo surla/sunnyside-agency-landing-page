@@ -16,7 +16,10 @@
 
   /* font-size */
   --fs-900: 3.5rem;
+  --fs-800: 3rem;
   --fs-700: 2rem;
+  --fs-600: 1.75rem;
+  --fs-500: 1.5rem;
   --fs-400: 1.125rem;
 
   /* font-families */
@@ -55,6 +58,7 @@ body {
   font-size: var(--fs-400);
   line-height: 1.5;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 /* Utility classes */
@@ -105,7 +109,15 @@ body {
   background-image: url(./images/mobile/image-header.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90vh;
+}
+
+.title {
+  width: 100px;
+  padding-top: 1.5em;
+  text-align: center;
+  font-size: var(--fs-800);
+  border: 2px solid salmon;
 }
 
 @media (min-width: 35rem) {
@@ -146,4 +158,42 @@ body {
 .arrow-image {
   margin-top: 5em;
   margin-inline: auto;
+}
+
+.image-transform {
+  background-image: url(./images/mobile/image-transfrom.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+article {
+  border: 2px solid salmon;
+}
+
+.card-content {
+  padding: 3em 2em;
+  color: var(--clr-neutral-medium);
+  text-align: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card-content h3 {
+  font-size: var(--fs-700);
+  color: var(--clr-neutral-deep);
+}
+
+.learn-more-link {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.graphic-design-card {
+  background-image: url(images/mobile/image-graphic-design.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  bottom: 0;
+  right: 0;
 }
